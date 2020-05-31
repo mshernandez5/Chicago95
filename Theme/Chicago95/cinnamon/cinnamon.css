@@ -8,7 +8,7 @@
  * ... contains a few cinnamon specific styles (rare occurences)
  * ###################################################################*/
 stage {
-  font-family: Ubuntu;
+  /*font-family: Ubuntu;*/
   font-size: 10pt; }
 
 .cinnamon-link {
@@ -218,12 +218,27 @@ StScrollBar StButton#hhandle {
   font-size: 10pt;
   height: 26px;
   width: 32px;
-  padding: 0px; }
+  padding: 0px 1px 0px 1px; }
 
 /*
 #panel:highlight {
     background-color: #accd8a;
 }*/
+
+#panelLeft .applet-box:first-child {
+  font-family: 'Microsoft Sans Serif';
+  font-weight: bold;
+  border-image: url('panel-assets/button.png') 5;
+  padding: 0px 6px 0px 6px;
+}
+
+#panelLeft .applet-box:first-child:hover {
+  border-image: url('panel-assets/hover-1.png') 5;
+}
+
+#panelLeft .applet-box:first-child:active {
+  border-image: url('panel-assets/button_selected.png') 5;
+}
 
 .panel-dummy {
   border: 1px solid rgba(0, 0, 128, 1.0);
@@ -279,6 +294,15 @@ StScrollBar StButton#hhandle {
 
 #panelLeft.vertical:rtl {
   padding-left: 0px;
+}
+
+#panelRight {
+  border-image: url("misc-assets/border-frame-2.png") 5;
+  margin: 2px;
+}
+
+#panelRight {
+  font-weight: normal;
 }
 
 .panel-top,
@@ -1021,7 +1045,7 @@ StScrollBar StButton#hhandle {
  * Window list applet (window-list@cinnamon.org/applet.js)
  * ===================================================================*/
 .window-list-box {
-  spacing: 3px;
+  spacing: 0px;
   padding-left: 0px; }
 
 .window-list-box.vertical {
@@ -1377,7 +1401,7 @@ StScrollBar StButton#hhandle {
 .applet-separator-line {}
 
 .applet-box {
-  font-weight: bold;
+  /*font-weight: bold;*/
   color: rgb(74, 74, 74);
   padding-left: 4px;
   padding-right: 4px;
@@ -1403,11 +1427,11 @@ StScrollBar StButton#hhandle {
 
 
 .applet-label {
-  font-weight: normal;
+  /*font-weight: normal;*/
   color: black; }
   .applet-label:checked,
-  .applet-label:hover {
-    font-weight: normal; }
+  /*.applet-label:hover {
+    font-weight: normal; }*/
 
 .applet-icon {
   icon-size: 22px; }
