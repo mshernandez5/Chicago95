@@ -218,7 +218,7 @@ StScrollBar StButton#hhandle {
   font-size: 10pt;
   height: 26px;
   width: 32px;
-  padding: 0px 1px 0px 1px; }
+  padding: 1px 3px 1px 2px; }
 
 /*
 #panel:highlight {
@@ -249,7 +249,7 @@ StScrollBar StButton#hhandle {
 
 #panelLeft,
 #panelCenter {
-  spacing: 4px; }
+  spacing: 2px; }
 
 .panel-left #panelLeft,
 .panel-left #panelRight,
@@ -298,7 +298,7 @@ StScrollBar StButton#hhandle {
 
 #panelRight {
   border-image: url("panel-assets/right-panel-frame.png") 5;
-  margin: 2px;
+  margin: 2px 0px 2px 0px;
 }
 
 #panelRight {
@@ -1371,7 +1371,7 @@ StScrollBar StButton#hhandle {
  * Panel Launchers applet (panel-launchers@cinnamon.org/applet.js)
  * ===================================================================*/
 .panel-launchers {
-  spacing: 10px;
+  spacing: 5px;
 }
 
 .panel-launchers .launcher {
