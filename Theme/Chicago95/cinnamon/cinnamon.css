@@ -297,7 +297,7 @@ StScrollBar StButton#hhandle {
 }
 
 #panelRight {
-  border-image: url("misc-assets/border-frame-2.png") 5;
+  border-image: url("panel-assets/right-panel-frame.png") 5;
   margin: 2px;
 }
 
